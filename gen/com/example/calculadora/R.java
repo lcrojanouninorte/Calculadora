@@ -1143,10 +1143,10 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
         public static final int row1=0x7f05003d;
-        public static final int row3=0x7f05003f;
-        public static final int row4=0x7f050044;
-        public static final int row5=0x7f050049;
-        public static final int row6=0x7f05004e;
+        public static final int row2=0x7f05003f;
+        public static final int row3=0x7f050044;
+        public static final int row4=0x7f050049;
+        public static final int row5=0x7f05004e;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;

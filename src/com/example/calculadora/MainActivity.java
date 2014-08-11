@@ -22,6 +22,7 @@ public class MainActivity extends ActionBarActivity {
 	 private boolean desdeIgual;
 	 private String signo = "";
 	 private int counter = 0;
+	 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,6 @@ public class MainActivity extends ActionBarActivity {
         desdeIgual =false;
         
     }
-    
     public void ButtonOnClick(View v) {
     	 String t;
     	 t = (String) campoTexto.getText();
@@ -144,94 +144,94 @@ public class MainActivity extends ActionBarActivity {
         	  ;break;
           }
     }
-private void sumar(){
-	 operacion = "+";
-	  if( campoTexto.getText() != "" && operando1 == 0.0f){
-		  operando1 = Double.parseDouble((String) campoTexto.getText());
-		  campoTexto.setText(""+operando1);
-		  operandoIngresado = true;
-	  }else{
-		  if(campoTexto.getText()!= "" ){
-			  if(counter > 1){
-				  operando1 = operando1 + operando2;
-			  }else{
-			operando2 = Double.parseDouble((String) campoTexto.getText()); 
-			operando1 = operando1 + operando2;
-			}
-		  	campoTexto.setText(""+operando1);
-     	    operandoIngresado = true;
-     	    }else{
-     	    	if(operando1!=0.0f){
-     	    		if(counter > 0){
-   					  operando1 = operando1 + operando2;
-   				  }
-     	    		campoTexto.setText(""+operando1);
-     	    		operandoIngresado = true;
-     	    		
-     	    	}
-     	    }
-		  }
-	desdeIgual =false;
-}
-private void restar(){
-	 operacion = "-";
-	  if( campoTexto.getText() != "" && operando1 == 0.0f){
-		  operando1 = Double.parseDouble((String) campoTexto.getText());
-		  campoTexto.setText(""+operando1);
-		  operandoIngresado = true;
-	  }else{
-		  if(campoTexto.getText()!= "" ){
-			  if(counter > 1){
-				  operando1 = operando1 - operando2;
-			  }else{
-			operando2 = Double.parseDouble((String) campoTexto.getText()); 
-			operando1 = operando1 - operando2;
-			}
-		  	campoTexto.setText(""+operando1);
-    	    operandoIngresado = true;
-    	    }else{
-    	    	if(operando1!=0.0f){
-    	    		if(counter > 0){
-  					  operando1 = operando1 - operando2;
-  				  }
-    	    		campoTexto.setText(""+operando1);
-    	    		operandoIngresado = true;
-    	    		
-    	    	}
-    	    }
-		  }
-	desdeIgual =false;
-}
-private void dividir(){
-	 operacion = "/";
-	  if( campoTexto.getText() != "" && operando1 == 0.0f){
-		  operando1 = Double.parseDouble((String) campoTexto.getText());
-		  campoTexto.setText(""+operando1);
-		  operandoIngresado = true;
-	  }else{
-		  if(campoTexto.getText()!= "" ){
-			  if(counter > 1){
-				  operando1 = operando1 / operando2;
-			  }else{
-			operando2 = Double.parseDouble((String) campoTexto.getText()); 
-			operando1 = operando1 / operando2;
-			}
-		  	campoTexto.setText(""+operando1);
-    	    operandoIngresado = true;
-    	    }else{
-    	    	if(operando1!=0.0f){
-    	    		if(counter > 0){
-  					  operando1 = operando1 / operando2;
-  				  }
-    	    		campoTexto.setText(""+operando1);
-    	    		operandoIngresado = true;
-    	    		
-    	    	}
-    	    }
-		  }
-	desdeIgual =false;
-}
-private void multiplicar(){
+	private void sumar(){
+		 operacion = "+";
+		  if( campoTexto.getText() != "" && operando1 == 0.0f){
+			  operando1 = Double.parseDouble((String) campoTexto.getText());
+			  campoTexto.setText(""+operando1);
+			  operandoIngresado = true;
+		  }else{
+			  if(campoTexto.getText()!= "" ){
+				  if(counter > 1){
+					  operando1 = operando1 + operando2;
+				  }else{
+				operando2 = Double.parseDouble((String) campoTexto.getText()); 
+				operando1 = operando1 + operando2;
+				}
+			  	campoTexto.setText(""+operando1);
+	     	    operandoIngresado = true;
+	     	    }else{
+	     	    	if(operando1!=0.0f){
+	     	    		if(counter > 0){
+	   					  operando1 = operando1 + operando2;
+	   				  }
+	     	    		campoTexto.setText(""+operando1);
+	     	    		operandoIngresado = true;
+	     	    		
+	     	    	}
+	     	    }
+			  }
+		desdeIgual =false;
+	}
+	private void restar(){
+		 operacion = "-";
+		  if( campoTexto.getText() != "" && operando1 == 0.0f){
+			  operando1 = Double.parseDouble((String) campoTexto.getText());
+			  campoTexto.setText(""+operando1);
+			  operandoIngresado = true;
+		  }else{
+			  if(campoTexto.getText()!= "" ){
+				  if(counter > 1){
+					  operando1 = operando1 - operando2;
+				  }else{
+				operando2 = Double.parseDouble((String) campoTexto.getText()); 
+				operando1 = operando1 - operando2;
+				}
+			  	campoTexto.setText(""+operando1);
+	    	    operandoIngresado = true;
+	    	    }else{
+	    	    	if(operando1!=0.0f){
+	    	    		if(counter > 0){
+	  					  operando1 = operando1 - operando2;
+	  				  }
+	    	    		campoTexto.setText(""+operando1);
+	    	    		operandoIngresado = true;
+	    	    		
+	    	    	}
+	    	    }
+			  }
+		desdeIgual =false;
+	}
+	private void dividir(){
+		 operacion = "/";
+		  if( campoTexto.getText() != "" && operando1 == 0.0f){
+			  operando1 = Double.parseDouble((String) campoTexto.getText());
+			  campoTexto.setText(""+operando1);
+			  operandoIngresado = true;
+		  }else{
+			  if(campoTexto.getText()!= "" ){
+				  if(counter > 1){
+					  operando1 = operando1 / operando2;
+				  }else{
+				operando2 = Double.parseDouble((String) campoTexto.getText()); 
+				operando1 = operando1 / operando2;
+				}
+			  	campoTexto.setText(""+operando1);
+	    	    operandoIngresado = true;
+	    	    }else{
+	    	    	if(operando1!=0.0f){
+	    	    		if(counter > 0){
+	  					  operando1 = operando1 / operando2;
+	  				  }
+	    	    		campoTexto.setText(""+operando1);
+	    	    		operandoIngresado = true;
+	    	    		
+	    	    	}
+	    	    }
+			  }
+		desdeIgual =false;
+	}
+	private void multiplicar(){
 	 operacion = "*";
 	  if( campoTexto.getText() != "" && operando1 == 0.0f){
 		  operando1 = Double.parseDouble((String) campoTexto.getText());
@@ -264,7 +264,7 @@ private void multiplicar(){
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        Calc c = new Calc();
+       
         return true;
     }
 

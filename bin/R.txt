@@ -298,10 +298,10 @@ int id progress_circular 0x7f050018
 int id progress_horizontal 0x7f050019
 int id radio 0x7f05002f
 int id row1 0x7f05003d
-int id row3 0x7f05003f
-int id row4 0x7f050044
-int id row5 0x7f050049
-int id row6 0x7f05004e
+int id row2 0x7f05003f
+int id row3 0x7f050044
+int id row4 0x7f050049
+int id row5 0x7f05004e
 int id search_badge 0x7f050032
 int id search_bar 0x7f050031
 int id search_button 0x7f050033
